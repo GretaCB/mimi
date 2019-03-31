@@ -1,3 +1,7 @@
+# Carol's About Mi (Me) Static Site
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/77690401-311c-4edb-9456-11bb303cb1e1/deploy-status)](https://app.netlify.com/sites/infallible-raman-086a5c/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
