@@ -1,51 +1,63 @@
+/**
+ * Layout component that queries for data
+ * with Gatsby's StaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/static-query/
+ */
+
 import React from "react"
-import { css } from "@emotion/core"
-import { StaticQuery, Link, graphql } from "gatsby"
+import PropTypes from "prop-types"
+import { StaticQuery, graphql } from "gatsby"
+import styled from "@emotion/styled"
 
-import { rhythm } from "../utils/typography"
+import Header from "./header"
+import "./layout.css"
 
-export default ({ children }) => (
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 0 1.0875rem 1rem;
+  padding-top: 0;
+`
+
+const GatsbyLink = styled.a`
+  margin-left: 5px;
+`
+
+const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+`
+
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query {
+      query SiteTitleQuery {
         site {
           siteMetadata {
             title
           }
         }
       }
-    `
-  }
-  render={data => (
-  <div
-    css={css`
-      margin: 0 auto;
-      max-width: 700px;
-      padding: ${rhythm(2)};
-      padding-top: ${rhythm(1.5)};
     `}
-  >
-    <Link to={`/`}>
-      <h3
-        css={css`
-          margin-bottom: ${rhythm(2)};
-          display: inline-block;
-          font-style: normal;
-        `}
-      >
-        {data.site.siteMetadata.title}
-      </h3>
-    </Link>
-    <Link
-      to={`/about/`}
-      css={css`
-        float: right;
-      `}
-    >
-      About
-    </Link>
-    {children}
-  </div>
+    render={data => (
+      <>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <Content>
+          <main>{children}</main>
+          <Footer>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
+          </Footer>
+        </Content>
+      </>
     )}
   />
 )
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
