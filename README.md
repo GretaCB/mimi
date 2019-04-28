@@ -1,5 +1,7 @@
 # Carol's About Me Static Site
 
+[![Build Status](https://travis-ci.org/GretaCB/mimi.svg?branch=master)](https://travis-ci.org/GretaCB/mimi)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/77690401-311c-4edb-9456-11bb303cb1e1/deploy-status)](https://app.netlify.com/sites/infallible-raman-086a5c/deploys)
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
