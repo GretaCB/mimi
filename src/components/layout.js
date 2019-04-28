@@ -1,22 +1,63 @@
+/**
+ * Layout component that queries for data
+ * with Gatsby's StaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/static-query/
+ */
+
 import React from "react"
-import { Link } from "gatsby"
-const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
+import PropTypes from "prop-types"
+import { StaticQuery, graphql } from "gatsby"
+import styled from "@emotion/styled"
+
+import Header from "./header"
+import "./layout.css"
+
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 0 1.0875rem 1rem;
+  padding-top: 0;
+`
+
+const GatsbyLink = styled.a`
+  margin-left: 5px;
+`
+
+const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+`
+
+const Layout = ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `}
+    render={data => (
+      <>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <Content>
+          <main>{children}</main>
+          <Footer>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
+          </Footer>
+        </Content>
+      </>
+    )}
+  />
 )
-export default ({ children }) => (
-  <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}>
-    <header style={{ marginBottom: `1.5rem` }}>
-      <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-        <h3 style={{ display: `inline` }}>MySweetSite</h3>
-      </Link>
-      <ul style={{ listStyle: `none`, float: `right` }}>
-        <ListLink to="/">Home</ListLink>
-        <ListLink to="/about/">About</ListLink>
-        <ListLink to="/contact/">Contact</ListLink>
-      </ul>
-    </header>
-    {children}
-  </div>
-)
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout

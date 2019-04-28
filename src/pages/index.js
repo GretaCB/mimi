@@ -1,12 +1,14 @@
 import React from "react"
-import Layout from "../components/layout"
 
-export default () => (
+import LandingBio from "../components/landing-bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+const IndexPage = () => (
   <Layout>
-    <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
-    <p>
-      What do I like to do? Lots of course but definitely enjoy building
-      websites.
-    </p>
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <LandingBio />
   </Layout>
 )
+
+export default IndexPage
