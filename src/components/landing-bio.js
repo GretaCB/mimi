@@ -26,7 +26,7 @@ const Title = styled.p`
 `
 
 const NameHeader = styled.h1`
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 0;
 `
 
@@ -45,9 +45,11 @@ const LandingBio = () => (
       <OuterContainer>
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Title>Software Engineer</Title>
+          <Title>Backend Software Engineer</Title>
             <Description>
-              <p>bloop bloop bleep boop bleep</p>
+              <p>Carol is a Chicago-based engineer with 7+ years of experience and a strong focus on knowledge sharing and lifelong learning. She works at SRAM strengthening the continuous integration (CI) pipeline and test infrastructure for embedded systems and is excited to be working "closer to the metal".</p>
+              <p>Previously, Carol was an engineer at Mapbox working on projects ranging from cloud-based data processing pipelines, C++/Node.js performance analysis, API development, to tooling and builds distribution.</p>
+              <p>Outside of work, Carol enjoys playing guitar, biking and food adventures. She strives to think beyond duality and to reimagine everyday systems from a care-focused lens.</p>
             </Description>
         </Container>
       </OuterContainer>
