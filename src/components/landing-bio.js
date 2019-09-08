@@ -44,7 +44,7 @@ const LandingBio = () => (
     render={data => (
       <OuterContainer>
         <Container>
-          <NameHeader>{data.site.siteMetadata.title}</NameHeader>
+          <NameHeader>Carol Hansen</NameHeader>
           <Title>Backend Software Engineer</Title>
             <Description>
               <p>Carol is a Chicago-based engineer with 7+ years of experience and a strong focus on knowledge sharing and lifelong learning. She works at SRAM strengthening the continuous integration (CI) pipeline and test infrastructure for embedded systems and is excited to be working "closer to the metal".</p>
