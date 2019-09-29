@@ -22,11 +22,23 @@ const Content = styled.div`
 
 const GatsbyLink = styled.a`
   margin-left: 5px;
+  margin-right: 5px;
+`
+
+const NetlifyLink = styled.a`
+  margin-left: 5px;
+  margin-right: 5px;
+`
+
+const SeanLink = styled.a`
+  margin-left: 5px;
+  margin-right: 5px;
 `
 
 const Footer = styled.footer`
   display: flex;
   justify-content: center;
+  padding-top: 5rem;
 `
 
 const Layout = ({ children }) => (
@@ -45,10 +57,11 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <Content>
           <main>{children}</main>
-          <Footer>
+          <Footer> 
             © {new Date().getFullYear()}, Built with
-            {` `}
-            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
+            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink> and
+            <NetlifyLink href="https://www.netlify.com/">Netlify</NetlifyLink>.
+            Photo by <SeanLink href="https://www.instagram.com/sirbruceleroy/">Sean Hopkins</SeanLink>.
           </Footer>
         </Content>
       </>
