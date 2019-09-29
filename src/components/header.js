@@ -12,6 +12,12 @@ const Content = styled.div`
   font-size: 1.2rem;
 `
 
+const ContentLinks = styled.p`
+  max-width: 860px;
+  font-size: 1.2rem;
+  text-align: center;
+`
+
 const NavLink = styled(Link)`
   color: black;
   margin-left: 15px;
@@ -65,7 +71,7 @@ const IconLink = styled.a`
 `
 
 const HomeLink = styled(NavLink)`
-  margin-left: 0;
+  align-content: center;
 `
 
 const SiteHeader = styled.header`
@@ -73,21 +79,24 @@ const SiteHeader = styled.header`
   display: flex;
   align-content: center;
   justify-content: center;
+  height: 20vh;
 `
 
 const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content>
-      <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
-        <IconLink href="https://github.com/gretacb">
-          <FontAwesomeIcon icon={faGithub} />
-        </IconLink>
-        <IconLink href="https://linkedin.com/in/carol-hansen-0b553315/">
-          <FontAwesomeIcon icon={faLinkedin} />
-        </IconLink>
-      </p>
+      <h1><HomeLink to="/">{siteTitle}</HomeLink></h1>
+      <ContentLinks>
+        <p>
+          <NavLink to="/blog">Blog</NavLink>
+          <IconLink href="https://github.com/gretacb">
+            <FontAwesomeIcon icon={faGithub} />
+          </IconLink>
+          <IconLink href="https://linkedin.com/in/carol-hansen-0b553315/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </IconLink>
+        </p>
+      </ContentLinks>
     </Content>
   </SiteHeader>
 )
