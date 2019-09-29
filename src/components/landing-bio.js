@@ -26,12 +26,6 @@ const OuterContainer = styled.div`
 const ImageContainer = styled.div`
 `
 
-const Title = styled.p`
-  padding: 0;
-  margin-bottom: 3.5rem;
-  font-size: 1.4rem;
-`
-
 const NameHeader = styled.h1`
   font-size: 2.5rem;
   margin-bottom: 0;
