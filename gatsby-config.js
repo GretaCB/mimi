@@ -28,6 +28,7 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-reading-time`,
+          'gatsby-remark-a11y-emoji'
         ],
       },
     },
