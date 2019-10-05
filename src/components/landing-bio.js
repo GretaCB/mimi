@@ -47,8 +47,9 @@ const LandingBio = () => (
               <img
                 alt="mi"
                 src={BioImage}
-                width='300'
-                height='200'
+                class="img-bio"
+                width="300"
+                height="200"
               />
             <Description>
               <p>Carol is a human person {raised_hand}. She is also a <b>backend software engineer</b> with 7+ years of experience and a strong focus on knowledge sharing and best practices.</p>
