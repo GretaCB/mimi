@@ -88,6 +88,9 @@ sup {
 img {
   border-style: none;
 }
+.img-bio {
+  border-radius: 15px;
+}
 svg:not(:root) {
   overflow: hidden;
 }
