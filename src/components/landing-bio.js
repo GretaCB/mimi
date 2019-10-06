@@ -57,18 +57,13 @@ const LandingBio = () => (
               <p>She is also a <b>backend software engineer</b> with 7+ years of experience and a strong focus on knowledge sharing and best practices.</p>
               
               <p>Carol currently works "closer to the metal" at <a href="https://www.sram.com/en/sram">SRAM LLC</a> helping to build the future of electronic 
-              bike components. She strengthens the continuous integration (CI) pipeline and firmware test infrastructure for embedded systems and 
-              enjoys finding solutions to team pain points.</p>
+              bike components. Previously, Carol was an engineer at <a href="https://www.mapbox.com/">Mapbox</a> helping to make maps faster and friendlier while contributing
+              to overall company sculture. Ironically, she rarely saw a map.</p>
               
-              <p>Previously, Carol was an engineer at <a href="https://www.mapbox.com/">Mapbox</a> helping to make maps faster and friendlier while contributing
-              to overall culture as the company grew. Ironically, she rarely saw a map during her day-to-day. She worked on projects ranging from 
-              cloud-based data processing pipelines, C++/Node.js performance analysis, API development, to dev tooling and builds distribution.</p>
-              
-              <p>Carol is allergic to <a href="https://modelviewculture.com/news/the-eternal-and-toxic-optimism-of-startup-advice">harmful tech industry rhetoric</a>. 
-              Carol strives to think beyond duality and to reimagine everyday systems from a care-focused lens. She's hungry for broader context and a longterm 
-              vision that values inclusion, transparency and humanity.</p>
+              <p>Carol is allergic to <a href="https://modelviewculture.com/news/the-eternal-and-toxic-optimism-of-startup-advice">harmful tech industry rhetoric</a>. She's hungry for a longterm 
+              vision that concretely values inclusion, transparency and humanity.</p>
 
-              <p>Outside of work, Carol enjoys playing guitar {guitar}, biking {bike} and food adventures {fried_egg}. Originally from Chicago, 
+              <p>More importantly, Carol enjoys playing guitar {guitar}, biking {bike}, and food adventures {fried_egg}. Originally from Chicago, 
               she relies on large bodies of water to orient her, and feels fortunate to be exposed to Chicago's deep roots of community justice organizing, music, 
               and an overflowing love for summer.</p> 
               
