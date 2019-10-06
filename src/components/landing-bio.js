@@ -44,15 +44,16 @@ const LandingBio = () => (
     render={data => (
       <OuterContainer>
         <Container>
-              <img
+                <img
                 alt="mi"
                 src={BioImage}
                 class="img-bio"
                 width="300"
                 height="200"
-              />
+              /> 
             <Description>
-              <p>Carol is a human person {raised_hand}. She is also a <b>backend software engineer</b> with 7+ years of experience and a strong focus on knowledge sharing and best practices.</p>
+              <p>Carol is a human person {raised_hand}</p>
+              <p>She is also a <b>backend software engineer</b> with 7+ years of experience and a strong focus on knowledge sharing and best practices.</p>
               <p>Carol currently works "closer to the metal" at <a href="https://www.sram.com/en/sram">SRAM LLC</a>, strengthening the continuous integration (CI) pipeline and firmware test infrastructure for embedded systems.</p>
               <p>Previously, Carol was an engineer at <a href="https://www.mapbox.com/">Mapbox</a> working on projects ranging from cloud-based data processing pipelines, C++/Node.js performance analysis, API development, to dev tooling and builds distribution.</p>
               <p>Outside of work, Carol enjoys playing guitar {guitar}, biking {bike} and food adventures {fried_egg}. She strives to think beyond duality and to reimagine everyday systems from a care-focused lens.</p>

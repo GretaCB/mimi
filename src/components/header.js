@@ -79,7 +79,7 @@ const SiteHeader = styled.header`
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 20vh;
+  height: 25vh;
 `
 
 const Header = ({ siteTitle }) => (
