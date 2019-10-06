@@ -58,7 +58,7 @@ const LandingBio = () => (
               
               <p>Carol currently works "closer to the metal" at <a href="https://www.sram.com/en/sram">SRAM LLC</a> helping to build the future of electronic 
               bike components. Previously, Carol was an engineer at <a href="https://www.mapbox.com/">Mapbox</a> helping to make maps faster and friendlier while contributing
-              to overall company sculture. Ironically, she rarely saw a map.</p>
+              to overall company culture. Ironically, she rarely saw a map.</p>
               
               <p>Carol is allergic to <a href="https://modelviewculture.com/news/the-eternal-and-toxic-optimism-of-startup-advice">harmful tech industry rhetoric</a>. She's hungry for a longterm 
               vision that concretely values inclusion, transparency and humanity.</p>
