@@ -54,11 +54,11 @@ const LandingBio = () => (
             <Description>
               <p>Carol is a human person {raised_hand}</p>
 
-              <p>She is also a <b>backend software engineer</b> with 7+ years of experience and a strong focus on knowledge sharing and best practices.</p>
+              <p>She is also a <b>backend software engineer</b> with 7+ years of experience and a strong focus on <a href="https://twitter.com/zahedab/status/1092798599296098304">knowledge sharing</a> and best practices.</p>
               
               <p>Carol currently works "closer to the metal" at <a href="https://www.sram.com/en/sram">SRAM LLC</a> helping to build the future of electronic 
               bike components. Previously, Carol was an engineer at <a href="https://www.mapbox.com/">Mapbox</a> helping to make maps faster and friendlier while contributing
-              to overall company culture. Ironically, she rarely saw a map.</p>
+              to overall company culture.</p>
               
               <p>Carol is allergic to <a href="https://modelviewculture.com/news/the-eternal-and-toxic-optimism-of-startup-advice">harmful tech industry rhetoric</a>. She's hungry for a longterm 
               vision that concretely values inclusion, transparency and humanity.</p>
