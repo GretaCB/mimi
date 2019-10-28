@@ -13,10 +13,10 @@ Welcome.
 
 ---
 
->     When you are writing, you’re trying to 
->     find out something which you don’t know.
->     
->     - James Baldwin
+>   When you are writing, you’re trying to 
+>   find out something which you don’t know.
+>   
+>   -- James Baldwin
 
 ---
 
