@@ -44,6 +44,16 @@ module.exports = {
         icon: `src/images/my_eye.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `UA-158792316-1`,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     'gatsby-plugin-offline'
