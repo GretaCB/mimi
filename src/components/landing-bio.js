@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import BioImage from "../images/carol_bio.jpg"
-const gemoji = require('gemoji')
-const robot = gemoji.name.robot.emoji;
-const raised_hand = gemoji.name.raised_hand.emoji;
-const guitar = gemoji.name.guitar.emoji;
-const bike = gemoji.name.bike.emoji;
-const fried_egg = gemoji.name.fried_egg.emoji;
+const gemoji = require('gemoji/name-to-emoji')
+const robot = gemoji.robot;
+const raised_hand = gemoji.raised_hand;
+const guitar = gemoji.guitar;
+const bike = gemoji.bike;
+const fried_egg = gemoji.fried_egg;
 
 const Description = styled.div`
   text-align: left;
